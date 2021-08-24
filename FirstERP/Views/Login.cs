@@ -26,7 +26,7 @@ namespace FirstERP.Views
         {
 
             string sql = "SELECT NAME FROM USERS";
-            SqlConnection 
+            SqlConnection //Estudar Data.SqlClient
 
 
             l_Teste.Text = recordset.Fields["name"].Value.ToString();
