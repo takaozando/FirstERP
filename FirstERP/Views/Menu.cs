@@ -24,8 +24,8 @@ namespace FirstERP
             try
             {
                 connection.DBConnect();
+                connection.GetAllServers();
                 fLogin.Show();
-            
             }
             catch (Exception ex)
             {
