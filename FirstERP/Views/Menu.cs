@@ -21,10 +21,14 @@ namespace FirstERP
 
         private void Menu_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'dataSet1.Item'. Você pode movê-la ou removê-la conforme necessário.
+            this.itemTableAdapter.Fill(this.dataSet1.Item);
+            // TODO: esta linha de código carrega dados na tabela 'dataSet1.Users'. Você pode movê-la ou removê-la conforme necessário.
+            this.usersTableAdapter.Fill(this.dataSet1.Users);
             try
             {
                 connection.DBConnect();
-                connection.GetAllServers();
+                //connection.GetAllServers();
                 fLogin.Show();
             }
             catch (Exception ex)
